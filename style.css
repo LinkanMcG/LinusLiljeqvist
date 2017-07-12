@@ -14,13 +14,13 @@ body {
 /*** Background Img ***/
 .block12background {
     background-attachment: fixed;
-    background-image: url(/pictures/professional-desk.jpg);
+    background-image: url(pictures/professional-desk.jpg);
     background-size: 100% 180%;
     background-repeat: no-repeat;
     background-position: 1px;
 }
 .block3background {
-     background-image: url(/pictures/business-desk.jpg);
+     background-image: url(pictures/business-desk.jpg);
     background-size: 100% 120%;
     background-repeat: no-repeat;
 }
