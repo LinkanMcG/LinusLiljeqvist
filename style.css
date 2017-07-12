@@ -1,0 +1,460 @@
+/*** import fonts ***/
+@import url('https://fonts.googleapis.com/css?family=Nunito|Nunito+Sans:300,400');
+
+
+/*** general ***/
+body {
+    overflow: scroll;
+    width: 100%;
+    margin-left: -2px;
+    font-family: 'Nunito+sans', sans-serif;
+}
+
+
+/*** Background Img ***/
+.block12background {
+    background-attachment: fixed;
+    background-image: url(/pictures/professional-desk.jpg);
+    background-size: 100% 180%;
+    background-repeat: no-repeat;
+    background-position: 1px;
+}
+.block3background {
+     background-image: url(/pictures/business-desk.jpg);
+    background-size: 100% 120%;
+    background-repeat: no-repeat;
+}
+/****************************************
+.background-pics {
+    position: absolute;
+    display: block;
+    left:0px;
+    top:0px;
+    z-index:-1;
+    width: 100%;
+     -webkit-filter: blur(5px);
+}
+.top-pic {
+    left:0px;
+    top:0px;
+    z-index:-1;
+    height: 1210px;
+    max-height: 1210px;
+    width: 100%;
+     -webkit-filter: blur(5px);
+}
+.second-pic {
+    width: 100%;
+    height: 1065px;
+    top: 1210px;
+} 
+****************************************/
+
+
+/***  top buttons ***/
+.top {
+    position: absolute;
+    z-index: 99;
+    background-color: transparent;
+}
+#tophome {
+    display: block;
+    position: fixed;
+    top: 70px;
+    left: 60px;
+    border: none;
+    outline: none;
+    background-color: transparent; 
+    color: white;
+    font-size: 20px;
+    /* button fade */
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+    -ms-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+}
+#tophome:hover {
+    color: lightgrey;
+}
+#topresume {
+    position: fixed;
+    top: 60px;
+    right: 60px;
+    border: solid 0.1em; 
+    padding: 10px 60px;
+    background-color: transparent;
+    color: white;
+    font-size: 12px;
+    /* button fade */
+    -webkit-transition: all ease 0.9s;
+    -moz-transition: all ease 0.9s;
+    -o-transition: all ease 0.9s;
+    -ms-transition: all ease 0.9s;
+    transition: all ease 0.9s;
+}
+#topresume:hover {
+    background-color: white;
+    color: red;
+    border-color: red; 
+}
+/****************************************/
+
+
+/***** blocks *****/
+.block {
+    display:block;
+    max-width: 3000px;
+    height: 610px;
+    font-size: 0px;
+}
+
+
+/***  block (1) Home ***/
+#block1 {
+    text-align: center;
+    color: white;
+    border: none;
+    margin-top: -60px;
+}
+#blocktitle {
+    font-size: 88px;
+    padding-top: 230px;
+    margin-bottom: 0px;
+    letter-spacing: 3px;
+}
+#blocktext {
+    font-size: 25px;
+    margin-top: 15px;
+    margin-left: 0px;
+    font-family: 'Nunito+sans', sans-serif;
+    font-weight: 200;
+    letter-spacing: 3px;
+    color: #94A3BA;
+}
+#blockhomeimg {
+    height: 240px;
+    width: 240px;
+    border-radius: 100%;
+    padding: 8px;
+    margin-top: 110px;
+    background-color: white;
+    z-index: 99;
+}
+
+
+/***  block (2) Sliderblock ***/
+#block2 {
+    border: none;
+    background-color: #edf0fa;
+}
+
+/****************************************
+#myCarousel {
+    visibility: hidden;
+}
+#carouselresume {
+    float: right;
+    top: 60px;
+    margin-right: 120px;
+    border: solid 0.1em; 
+    padding: 10px 40px;
+    background-color: transparent;
+    color: black;
+    font-size: 12px;
+    -webkit-transition: all ease 0.9s;
+    -moz-transition: all ease 0.9s;
+    -o-transition: all ease 0.9s;
+    -ms-transition: all ease 0.9s;
+    transition: all ease 0.9s;
+}
+#itemtitle {
+    float: left;
+    top: 60px;
+    margin-right: 120px;
+}
+****************************************/
+
+
+/*** block (3) Skills ***/
+#block3 {
+    height: 980px;
+    padding-top: 40px;
+}
+#block3 div div {
+    height: 313px;
+    width: 313px;  
+    display: inline-block;
+    -webkit-filter: opacity(90%);
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+    -ms-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+}
+#block3 div div:hover {
+        -webkit-filter: opacity(100%);
+}
+
+#blockskills {
+    background-color: white;
+}
+#blockskillswrap {
+    width: 950px;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
+}
+#blockskills1 {
+    background-color:#b3cce6;
+}
+#skillstitle {
+    margin-top: 130px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+#skillstatus1 {
+    font-size: 32px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin: 0;
+    color: #264d73;
+}
+#skillstatus {
+    font-size: 32px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin: 0;
+    color: #e60000;
+}
+
+
+/*** block (4) Quick ID and Contact me ***/
+#block4 div {
+    display: inline-block;
+    height: 100%;
+    width: 50%;
+    margin: 0px 0px;
+    border: none;
+}
+
+/* Block (4) Left, Table */
+#block4left {
+    background-color: #024576;
+    float:left;
+}
+div div h5 {
+    margin-left: 125px;
+    margin-bottom: 0px;
+    font-size: 38px;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+div div h4 {
+    margin-top: -15px;
+    margin-left: 127px;
+    font-size: 45px;
+    color: white;
+    font-weight: bolder;
+    letter-spacing: -3.5px;
+}
+#blockline {
+    color: #ff3333;
+}
+#blocktitle1 {
+    color: black;
+}
+#contact {
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-left: 125px;
+}
+tr {
+    font-size: 16px;
+    color: white;
+    display: table-row;
+}
+td {
+    padding: 8px 20px;
+}
+#td1 {
+    font-weight: bold;
+}
+table {
+    margin-top: -30px;
+    margin-left: 105px;
+}
+a {
+    text-decoration: none;
+    color: white;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+    -ms-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+}
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    color: lightgrey;
+}
+
+/* Block (4) Right, Form */
+#block4right {
+    background-color: #a8c1dd; 
+    float: right;
+}
+form {
+    margin: -30px auto;
+    text-align: center;
+}
+#toprow {
+    width: 38%;
+}
+input[type="text"] {
+    width: 80%;
+    padding: 3px 5px;
+    margin: 6px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: #024576 solid 1px;
+    background-color: transparent;
+    font-size: 16px;
+    color: white;
+    resize: none;
+}
+input[name="namn"] {
+    float:left;
+    margin-left: 10%;
+}
+input[name="e-post"] {
+    float:right;
+    margin-right: 10%;
+}
+input[name="meddelande"] {
+}
+input::placeholder {
+    color:  #336699;
+    letter-spacing: 1px;
+}
+
+textarea {
+    width: 80%;
+    padding: 3px 5px;
+    margin: 6px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: #024576 solid 1px;
+    background-color: transparent;
+    font-size: 16.5px;
+    color: white;
+    resize: none;
+}
+textarea::placeholder {
+    color:  #336699;
+    letter-spacing: 1px;
+    font-family: 'nunito';
+}
+
+input[type="submit"] {
+    width: 80%;
+    padding: 3px 5px;
+    margin: 6px;
+    box-sizing: border-box;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    color: #336699;
+    resize: none;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+    -ms-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+}
+input[type="submit"]:hover {
+    color: #024576;
+}
+
+
+/*** Footer ***/
+.footer {
+    max-width: 3000px;
+    height: 200px;
+    font-size: 0px;
+    background-color: #edf0fa;
+}
+
+.footer div {
+    display: inline-block;
+    height: 100%;
+    width: 50%;
+    margin: 0px 0px;
+    border: none;
+}
+
+/* footer left */
+#left {
+    float: left;
+}
+#footerresume {
+    float: left;
+    margin-top: 65px;
+    margin-left: 120px;
+    border: solid 0.1em; 
+    padding: 16.5px 125px;
+    background-color: transparent;
+    color: black;
+    font-size: 12px;
+    /* button fade */
+    -webkit-transition: all ease 0.9s;
+    -moz-transition: all ease 0.9s;
+    -o-transition: all ease 0.9s;
+    -ms-transition: all ease 0.9s;
+    transition: all ease 0.9s;
+    -webkit-filter: blur(1px);
+}
+#footerresume:hover {
+    background-color: white;
+    color: red;
+    border-color: red;
+    -webkit-filter: opacity(90%);
+    -webkit-filter: blur(0px)
+}
+#endnote {
+    background-color: transparent;
+    color: black;
+    font-size: 12px;
+    margin-left: 120px;
+    margin-top: 135px;
+}
+
+/* footer right */
+#right {
+    float: right;
+}
+ul {
+    margin-top: 73px;
+    margin-left: 31%
+}
+ul li{
+    display: inline-block;
+    margin: 4px 7px
+}
+ul li:hover{
+    -webkit-filter: brightness(115%)
+}
+ul li img {
+    height: 30px; 
+}
+#socialnetwork {
+    background-color: transparent;
+    color: black;
+    font-size: 12px;
+    margin-left: 38.5%;
+    margin-top: 20px;
+}
