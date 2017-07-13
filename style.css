@@ -15,13 +15,13 @@ body {
 .block12background {
     background-attachment: fixed;
     background-image: url(pictures/professional-desk.jpg);
-    background-size: contain;
+    background-size: 100% 180%;
     background-repeat: no-repeat;
     background-position: 1px;
 }
 .block3background {
-     background-image: url(pictures/business-desk.jpg);
-    background-size: contain;
+    background-image: url(pictures/business-desk.jpg);
+    background-size: 100% 120%;
     background-repeat: no-repeat;
 }
 /****************************************
@@ -137,6 +137,7 @@ body {
     width: 240px;
     border-radius: 100%;
     border: 8px;
+    padding: 8px;
     margin-top: 110px;
     background-color: white;
     z-index: 99;
