@@ -372,7 +372,7 @@ ul li img {
         width: 100%;
     }
 .bg-img {
-    background-size: 100% 120%;
+    background-size: 100% 130%;
     -webkit-filter: blur(0px) opacity(100%);
     -moz-filter: blur(3px) opacity(100%);
     -o-filter: blur(3px) opacity(100%);
@@ -381,6 +381,9 @@ ul li img {
     }
 .header #home {
     font-size: 20px;
+}
+#home:hover {
+    color: white;
 }
 .header #resume {
     padding: 10px 20px;
