@@ -372,7 +372,7 @@ ul li img {
         width: 100%;
     }
 .bg-img {
-    background-size: 100% 80%;
+    background-size: 100% 120%;
     -webkit-filter: blur(0px) opacity(100%);
     -moz-filter: blur(3px) opacity(100%);
     -o-filter: blur(3px) opacity(100%);
