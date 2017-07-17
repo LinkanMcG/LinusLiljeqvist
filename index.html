@@ -7,13 +7,13 @@
     <meta name="author" content="Linus Liljeqvist">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--CSS-->
-    <link href='style.css' rel='stylesheet'>
+    <link href='stylesheets/style.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
 </head>
     
 <body>
 <script src="script/script.js"></script>
-    
+    <div class="bg-img"></div>
     <!----------------------------------------------------------------
     background pictures 
     <div class="background-pics">
@@ -24,30 +24,22 @@
 
 
     <!---- top buttons ----> 
-    <div class="top">
-        <button id="tophome" onclick="topFunction()" title="Go to top">HOME</button>
-        <button id="topresume" type="button">DOWNLOAD MY FULL RESUME</button>
+    <div class="col-12 col-m-12 header">
+        <button id="home" onclick="topFunction()" title="Go to top">HOME</button>
+        <button id="resume" type="button">DOWNLOAD MY FULL RESUME</button>
     </div>
     
-    
     <!---- block (1+2) Background Img ---->
-    <div class="block12background">
-        
-        
         <!---- block (1) Home ---->
-        <header>
-            <div class="block" id="block1">
-                <h1 id="blocktitle">Linus Liljeqvist</h1>
-                <h5 id="blocktext">ECONOMICS STUDENT</h5>
-                <img id="blockhomeimg" src="pictures/linus-profilbild.jpg" alt="profilbild">
-            </div> 
-        </header>
-        
+     <div class="row">
+        <div class="col-12 col-m-12 frontpage">
+            <h1>Linus Liljeqvist</h1>
+            <h5>ECONOMICS STUDENT</h5>
+            <img src="pictures/linus-profilbild.jpg" alt="profilbild" width="35%" height="35%">
+        </div> 
     
-        <!---- block (2) sliderblock ---->
-        <div class="block" id="block2">
-            
-<!----------------------------------------------------------------
+
+        <div class="col-12 col-m-12 box-carousel" id="carousel">
             <div id="myCarousel" class="carousel-slide" data-ride="carousel">
 
                 <ol class="carousel-indicators">
@@ -85,61 +77,56 @@
                     <span class="sr-only">Next</span>
                   </a>
             </div>
----------------------------------------------------------------->
-        </div> 
-    </div>  
-    
+        </div>  
     
     <!---- block (3) Skills and background image ---->
-    <div class="block3background">
-        <div class="block" id="block3">
-
+        <div class="col-12 col-m-12 box-display">
+            <div class="box-bg-img"></div>
             <!-- headline -->
             <h5>SKILLS</h5>
-            <h4>----</h4>
+            <h4>---</h4>
 
             <!-- skills boxes -->
-            <div id="blockskillswrap">
-                <div id="blockskills1">
-                    <p id="skillstitle">Microsoft Excell</p>
-                    <p id="skillstatus1">Advanced</p>
+            <div class="boxwrap">
+                <div class="box col-4">
+                    <h2>Microsoft Excel</h2>
+                    <p>Advanced</p>
                 </div>
-                <div id="blockskills">
-                    <p id="skillstitle">HTML & CSS</p>
-                    <p id="skillstatus">Proficient</p>
+                <div class="box one col-4">
+                    <h2>HTML and CSS</h2>
+                    <p id="text">Proficient</p>
                 </div>
-                <div id="blockskills1">
-                    <p id="skillstitle">PowerPoint</p>
-                    <p id="skillstatus1">Advanced</p>
+                <div class="box col-4">
+                    <h2>PowerPoint</h2>
+                    <p>Advanced</p>
                 </div>
-                <div id="blockskills">
-                    <p id="skillstitle">Creativity</p>
-                    <p id="skillstatus">Evolved</p>
+                <div class="box one col-4">
+                    <h2>Creativity</h2>
+                    <p id="text">Evolved</p>
                 </div>
-                <div id="blockskills1">
-                    <p id="skillstitle">Analytics</p>
-                    <p id="skillstatus1">Proficient</p>
+                <div class="box col-4">
+                    <h2>Analytics</h2>
+                    <p>Proficient</p>
                 </div>
-                <div id="blockskills">
-                    <p id="skillstitle">Strategy</p>
-                    <p id="skillstatus">Advanced</p>
+                <div class="box one col-4">
+                    <h2>Strategy</h2>
+                    <p id="text">Advanced</p>
                 </div>
             </div>
         </div>
-    </div>
     
     
     <!---- block (4) Quick ID and Contact me ---->
-    <div class="block" id="block4">
+
         
         <!-- block (4) Left, Table -->
-        <div id="block4left">
+        <div class="col-6 col-m-6 quick-id">
             <h5>QUICK ID</h5>
-            <h4 id="blockline">----</h4>
+            <h4>---</h4>
                 <table>
                     <tr>
                         <th></th>
-                        <th></th> 
+                        <th></th>
                     </tr>
                     <tr>
                         <td id="td1">Phone</td>
@@ -165,35 +152,30 @@
         </div>
         
         <!-- Block (4) Right, Form  -->
-        <div id="block4right">
+        <div class="col-6 col-m-6 contact-me">
             <h5 id="blocktitle1">CONTACT ME</h5>
-            <h4 id="blockline">----</h4>
+            <h4 id="blockline">---</h4>
             <form action="mailto:linus.liljeqvist@gmail.com" method="post" enctype="text/plain">
-                <input id="toprow" type="text" name="namn" placeholder=""  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Namn'"><br>
+                <input id="toprow" type="text" name="namn" placeholder="Namn"  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Namn'"><br>
                 <input id="toprow" type="text" name="e-post" placeholder="E-post" onfocus="this.placeholder = ''" onblur="this.placeholder = 'E-post'"><br>
                 <input type="text" name="ämne" placeholder="Ämne" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ämne'"><br>
                 <textarea name="meddelande" placeholder="Meddelande" rows="6" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Meddelande'" ></textarea>
                 <input type="submit" value="Send">
             </form>
         </div>
-    </div>
-    
-    
+    </div>   <!-- Row -->
     <!---- Footer ---->
-    <div class="footer">
-        <div id="left">
-            <button id="footerresume" type="button">DOWNLOAD MY FULL RESUME</button>
-            <p id="endnote">© 2017 by Linus Liljeqvist</p>
-        </div>
-        <div id="right">
+    <div class="col-12 col-m-12 footer">
+            <button id="resume" type="button">DOWNLOAD MY FULL RESUME</button>
+            <br><br><p id="endnote">© 2017 by Linus Liljeqvist</p>
             <ul>
                 <li><a href="https://www.facebook.com/linus.liljeqvist" target="_blank"><img src="pictures/facebook.svg" alt="facebook"></a></li>
                 <li><a href="https://www.linkedin.com/in/linus-liljeqvist-19184096/" target="_blank"><img src="pictures/linkedin.svg" alt="linkedin"></a></li>
                 <li><a href="https://twitter.com/LinusLiljeqvist" target="_blank"><img src="pictures/twitter.svg" alt="twitter"></a></li>
-                <li><img src="pictures/rss.svg" alt="rss"></li>
+                <li><img src="pictures/rss.svg" alt="rss"></li><br>
+
             </ul>
-            <p id="socialnetwork">Follow me on social networks</p>
-        </div>
+                <p id="socialnetwork">Follow me on social networks</p>   
     </div>
 </body>
 </html>
